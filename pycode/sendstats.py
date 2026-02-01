@@ -9,6 +9,8 @@ BAUD = 9600
 mode = 1
 letzte_sendung = 0
 uepressed = False
+
+
 try:
     arduino = serial.Serial(PORT, BAUD, timeout=1)
     time.sleep(2)  # Warte auf Arduino Reset
